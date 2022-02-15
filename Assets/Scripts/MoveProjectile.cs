@@ -29,7 +29,12 @@ public class MoveProjectile : MonoBehaviour
 		{
 			col.gameObject.SetActive(false);
 		}
-		
+
+		if (col.gameObject.name == "EnemySmall")
+		{
+			col.gameObject.SetActive(false);
+		}
+
 		if (col.gameObject.name == "Top")
 		{
 			Object.Destroy(this.gameObject);
