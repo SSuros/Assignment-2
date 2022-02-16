@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
-  moveSpeed: 10
+  moveSpeed: 15
   changeDirection: 0
   distanceR: 0
   distanceL: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2885843bbb8ad4646a2e299799bf310b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livesRemaining: 15
+  livesRemaining: 20
 --- !u!1 &6918269190624403650
 GameObject:
   m_ObjectHideFlags: 0

@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b54a35d8aa0bb648a62d2757f2efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 17
   player: {fileID: 0}
 --- !u!60 &401601110
 PolygonCollider2D:
@@ -3218,7 +3218,7 @@ MonoBehaviour:
     - {fileID: 7479318630475758540, guid: b81350fce998cb44cb77cc12c83bb9a8, type: 3}
     spawnInterval: 1
   - waveName: Wave 2
-    noOfEnemies: 5
+    noOfEnemies: 10
     typeOfEnemies:
     - {fileID: 7479318630475758540, guid: b81350fce998cb44cb77cc12c83bb9a8, type: 3}
     - {fileID: 4023636938847424018, guid: 9e00aec936ccaa34d825a79aed923f67, type: 3}

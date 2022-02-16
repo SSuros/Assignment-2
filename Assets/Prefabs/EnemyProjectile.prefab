@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  moveSpeed: 20
+  moveSpeed: 25
 --- !u!50 &-2190161352797002234
 Rigidbody2D:
   serializedVersion: 4
