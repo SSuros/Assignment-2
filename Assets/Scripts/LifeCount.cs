@@ -11,14 +11,12 @@ public class LifeCount : MonoBehaviour
 
     public void LoseLife()
     {
-        if (livesRemaining == 0)
-            return;
         livesRemaining--;
-        lives[livesRemaining].enabled = false;
-
-        if(livesRemaining == 0)
+        if (livesRemaining == 0)
         {
             SceneManager.LoadScene("GameEnd");
+            return;
         }
+        lives[livesRemaining].enabled = false;
     }
 }

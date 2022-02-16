@@ -26,10 +26,24 @@ public class EnemyProjectile : MonoBehaviour
 		if (col.gameObject.tag == "Player")
 		{
 			FindObjectOfType<LifeCount>().LoseLife();
+			FindObjectOfType<AudioManager>().Play("PlayerHurt");
 			Object.Destroy(this.gameObject);
 
 		}
-		
+
+		if (col.gameObject.tag == "Enemy")
+		{
+			
+			Object.Destroy(this.gameObject);
+
+		}
+
+		if (col.gameObject.name == "Boss")
+		{
+			Object.Destroy(this.gameObject);
+		}
+
+
 		if (col.gameObject.name == "Bottom")
 		{
 			Object.Destroy(this.gameObject);

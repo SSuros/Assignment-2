@@ -9,7 +9,12 @@ public class Enemy : MonoBehaviour
 
 	public float moveSpeed = 15.0f; 
 
-	public bool changeDirection = false; 
+	public bool changeDirection = false;
+
+	public float distanceR;
+	public float distanceL;
+
+
 
 	void Start()
 	{
@@ -18,7 +23,10 @@ public class Enemy : MonoBehaviour
 
 	void Update()
 	{
+
 		moveEnemy();
+		
+
 	}
 
 	public void moveEnemy()
@@ -44,6 +52,10 @@ public class Enemy : MonoBehaviour
 		if (col.gameObject.name == "LeftWall")
 		{
 			changeDirection = false;
+		}
+		if (col.gameObject.name == "EnemySmall")
+		{
+			changeDirection = true;
 		}
 	}
 }
